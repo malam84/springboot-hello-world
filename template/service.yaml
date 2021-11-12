@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: pipeline-hello-world
-  name: pipeline-hello-world
+    app: springboot-hello-world
+  name: springboot-hello-world
 spec:
   ports:
     - name: 8080-tcp
@@ -11,4 +11,4 @@ spec:
       targetPort: 8080
       protocol: TCP
   selector:
-    app: pipeline-hello-world
+    app: springboot-hello-world
