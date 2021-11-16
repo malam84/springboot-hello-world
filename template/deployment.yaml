@@ -15,7 +15,7 @@ spec:
         app: springboot-hello-world
     spec:
       containers:
-      - image: image-registry.openshift-image-registry.svc:5000/hello-tekton-buildah-demo/springboot-hello-world:latest
+      - image: quay.io/malam/springboot-hello-world:latest
         imagePullPolicy: Always
         name: springboot-hello-world
         ports:
